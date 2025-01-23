@@ -1,0 +1,39 @@
+{
+  "name": "tailwind-components-framework",
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/tailwind-components-framework.umd.cjs",
+  "module": "./dist/tailwind-components-framework.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tailwind-components-framework.js",
+      "require": "./dist/tailwind-components-framework.umd.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "predev": "npm install",
+    "dev": "vite",
+    "prebuild": "npm install",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "@eslint/js": "^9.14.0",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "prettier": "^3.3.3",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0",
+    "vitest": "^2.1.8"
+  }
+}

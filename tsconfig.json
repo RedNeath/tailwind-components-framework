@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true
+  },
+  "exclude": ["src/App.vue", "src/main.ts", "src/style.css"],
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
+}
