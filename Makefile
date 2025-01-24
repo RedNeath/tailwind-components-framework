@@ -1,7 +1,7 @@
-dev:
+dev: build
 	docker run --name tailwind-components-framework-dev \
 		--rm \
-		-w "/app" \
+		-w "/app/example" \
 		-e "NODE_ENV=dev" \
 		-v ".:/app" \
 		--expose "5173" \
@@ -17,3 +17,8 @@ build:
 		-v ".:/app" \
 		node:22-alpine3.20 \
 		npm run build
+
+
+ldev:
+	cd example
+	npm run dev

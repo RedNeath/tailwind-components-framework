@@ -13,8 +13,6 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "predev": "npm install",
-    "dev": "vite",
     "prebuild": "npm install",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
