@@ -5,10 +5,12 @@
       
       <a href="#t-button" class="text-blue-500 underline dark:text-blue-400">t-button</a>
       <a href="#t-input" class="text-blue-500 underline dark:text-blue-400">t-input</a>
+      <a href="#t-textarea" class="text-blue-500 underline dark:text-blue-400">t-textarea</a>
     </div>
     <div class="grid grid-cols-1 gap-6 w-full ml-2">
       <ButtonPreview id="t-button" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></ButtonPreview>
       <InputPreview id="t-input" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></InputPreview>
+      <TextareaPreview id="t-textarea" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></TextareaPreview>
     </div>
   </div>
 </template>
@@ -16,11 +18,13 @@
 <script lang="ts">
 import ButtonPreview from './components/ButtonPreview.vue';
 import InputPreview from './components/InputPreview.vue';
+import TextareaPreview from './components/TextareaPreview.vue';
 
 export default {
   components: {
     ButtonPreview,
-    InputPreview
+    InputPreview,
+    TextareaPreview,
   },
 }
 </script>

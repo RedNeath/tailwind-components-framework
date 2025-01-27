@@ -1,7 +1,9 @@
 import tButton from "./components/t-button/t-button.vue";
 import tInput from "./components/t-input/t-input.vue";
+import tTextarea from "./components/t-textarea/t-textarea.vue";
 
 export {
     tButton,
-    tInput
+    tInput,
+    tTextarea,
 };
