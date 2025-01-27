@@ -17,8 +17,3 @@ build:
 		-v ".:/app" \
 		node:22-alpine3.20 \
 		npm run build
-
-
-ldev:
-	cd example
-	npm run dev
