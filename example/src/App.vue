@@ -7,12 +7,14 @@
       <a href="#t-input" class="text-blue-500 underline dark:text-blue-400">t-input</a>
       <a href="#t-textarea" class="text-blue-500 underline dark:text-blue-400">t-textarea</a>
       <a href="#t-select" class="text-blue-500 underline dark:text-blue-400">t-select</a>
+      <a href="#t-radio" class="text-blue-500 underline dark:text-blue-400">t-radio</a>
     </div>
     <div class="grid grid-cols-1 gap-6 w-full ml-2">
       <ButtonPreview id="t-button" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></ButtonPreview>
       <InputPreview id="t-input" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></InputPreview>
       <TextareaPreview id="t-textarea" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></TextareaPreview>
       <SelectPreview id="t-select" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></SelectPreview>
+      <RadioPreview id="t-radio" class="border border-gray-300 shadow rounded-lg p-4 pt-0 dark:border-gray-600"></RadioPreview>
     </div>
   </div>
 </template>
@@ -20,6 +22,7 @@
 <script lang="ts">
 import ButtonPreview from './components/ButtonPreview.vue';
 import InputPreview from './components/InputPreview.vue';
+import RadioPreview from './components/RadioPreview.vue';
 import SelectPreview from './components/SelectPreview.vue';
 import TextareaPreview from './components/TextareaPreview.vue';
 
@@ -29,6 +32,7 @@ export default {
     InputPreview,
     TextareaPreview,
     SelectPreview,
+    RadioPreview,
   },
 }
 </script>
